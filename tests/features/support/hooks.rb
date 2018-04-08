@@ -6,6 +6,7 @@ After '@adicionartagparaafeture'do
 end
 
 # depois de cada cenario ele tira um print e remove todos os espaços e virgulas
+
 After do |scenario|
     scenario_name = scenario.name.gsub(/\s+/, '_').tr('/', '_')
     scenario_name = scenario.name.delete(',','')
